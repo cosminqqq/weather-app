@@ -1,0 +1,53 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Practice</title>
+        <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="wrapper">
+	
+	
+		<div class="window">
+			<img class="canvas-glass" src="glass.png">
+
+					<canvas id="rainCanv"></canvas>
+					<div class="main-info">
+					<div class="temp">
+						<h1 id="temperature"></h1>
+					</div>
+					
+					<div class="time">
+						<h3 id="hour"></h3>
+						<h3 id="dta"></h3>
+					</div>
+					
+					</div>
+					<div class="weather-info">
+					
+						<div class="search-bar">
+							<input name="query" id="search-input" type="text" placeholder="Search Location" autocomplete="off">
+							<div class="err"><h3>The city does not exist</h3></div>
+							<button id="search-btn"><img src="search-icon.png" style="width: 22px; height: 22px;"></button>
+						</div>
+						<div class="info">
+							<h4>Weather Details</h4>
+							<h4 id="weather">Weather: </h4>
+							<h4 id="humidity">Humidity: </h4>
+							<h4 id="wind">Wind: </h4>
+						</div>
+						
+					</div>	 
+
+		</div>
+	</div>
+
+	
+	<script src="makeRain.js"></script>
+</body>
+
+</html>
